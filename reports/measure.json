@@ -1,0 +1,322 @@
+[
+ {
+  "w": 360,
+  "ca": "absent",
+  "sw": 360,
+  "iw": 360,
+  "targets": 26,
+  "hdrH": 140,
+  "caFont": 16,
+  "caFits": true,
+  "caTop": 60,
+  "soc": [
+   {
+    "x": 252,
+    "y": 8,
+    "w": 44,
+    "h": 44,
+    "vis": true
+   },
+   {
+    "x": 300,
+    "y": 8,
+    "w": 44,
+    "h": 44,
+    "vis": true
+   }
+  ],
+  "rows": 9,
+  "h1": 48,
+  "rowH": 128,
+  "cellClip": false,
+  "small": 0
+ },
+ {
+  "w": 360,
+  "ca": "stated",
+  "sw": 360,
+  "iw": 360,
+  "targets": 31,
+  "hdrH": 140,
+  "caFont": 15,
+  "caFits": true,
+  "caTop": 60,
+  "soc": [
+   {
+    "x": 252,
+    "y": 8,
+    "w": 44,
+    "h": 44,
+    "vis": true
+   },
+   {
+    "x": 300,
+    "y": 8,
+    "w": 44,
+    "h": 44,
+    "vis": true
+   }
+  ],
+  "rows": 10,
+  "h1": 48,
+  "rowH": 128,
+  "cellClip": false,
+  "small": 0
+ },
+ {
+  "w": 390,
+  "ca": "absent",
+  "sw": 390,
+  "iw": 390,
+  "targets": 26,
+  "hdrH": 140,
+  "caFont": 16,
+  "caFits": true,
+  "caTop": 60,
+  "soc": [
+   {
+    "x": 282,
+    "y": 8,
+    "w": 44,
+    "h": 44,
+    "vis": true
+   },
+   {
+    "x": 330,
+    "y": 8,
+    "w": 44,
+    "h": 44,
+    "vis": true
+   }
+  ],
+  "rows": 9,
+  "h1": 48,
+  "rowH": 128,
+  "cellClip": false,
+  "small": 0
+ },
+ {
+  "w": 390,
+  "ca": "stated",
+  "sw": 390,
+  "iw": 390,
+  "targets": 31,
+  "hdrH": 140,
+  "caFont": 15,
+  "caFits": true,
+  "caTop": 60,
+  "soc": [
+   {
+    "x": 282,
+    "y": 8,
+    "w": 44,
+    "h": 44,
+    "vis": true
+   },
+   {
+    "x": 330,
+    "y": 8,
+    "w": 44,
+    "h": 44,
+    "vis": true
+   }
+  ],
+  "rows": 10,
+  "h1": 48,
+  "rowH": 128,
+  "cellClip": false,
+  "small": 0
+ },
+ {
+  "w": 430,
+  "ca": "absent",
+  "sw": 430,
+  "iw": 430,
+  "targets": 26,
+  "hdrH": 140,
+  "caFont": 16,
+  "caFits": true,
+  "caTop": 60,
+  "soc": [
+   {
+    "x": 322,
+    "y": 8,
+    "w": 44,
+    "h": 44,
+    "vis": true
+   },
+   {
+    "x": 370,
+    "y": 8,
+    "w": 44,
+    "h": 44,
+    "vis": true
+   }
+  ],
+  "rows": 9,
+  "h1": 48,
+  "rowH": 128,
+  "cellClip": false,
+  "small": 0
+ },
+ {
+  "w": 430,
+  "ca": "stated",
+  "sw": 430,
+  "iw": 430,
+  "targets": 31,
+  "hdrH": 140,
+  "caFont": 15,
+  "caFits": true,
+  "caTop": 60,
+  "soc": [
+   {
+    "x": 322,
+    "y": 8,
+    "w": 44,
+    "h": 44,
+    "vis": true
+   },
+   {
+    "x": 370,
+    "y": 8,
+    "w": 44,
+    "h": 44,
+    "vis": true
+   }
+  ],
+  "rows": 10,
+  "h1": 48,
+  "rowH": 128,
+  "cellClip": false,
+  "small": 0
+ },
+ {
+  "w": 1366,
+  "ca": "absent",
+  "sw": 1366,
+  "iw": 1366,
+  "targets": 26,
+  "hdrH": 92,
+  "caFont": 24,
+  "caFits": true,
+  "caTop": 12,
+  "soc": [
+   {
+    "x": 1244,
+    "y": 24,
+    "w": 44,
+    "h": 44,
+    "vis": true
+   },
+   {
+    "x": 1292,
+    "y": 24,
+    "w": 44,
+    "h": 44,
+    "vis": true
+   }
+  ],
+  "rows": 9,
+  "h1": 73.764,
+  "rowH": 69,
+  "cellClip": false,
+  "small": 0
+ },
+ {
+  "w": 1366,
+  "ca": "stated",
+  "sw": 1366,
+  "iw": 1366,
+  "targets": 31,
+  "hdrH": 92,
+  "caFont": 25.954,
+  "caFits": true,
+  "caTop": 12,
+  "soc": [
+   {
+    "x": 1244,
+    "y": 23,
+    "w": 44,
+    "h": 44,
+    "vis": true
+   },
+   {
+    "x": 1292,
+    "y": 23,
+    "w": 44,
+    "h": 44,
+    "vis": true
+   }
+  ],
+  "rows": 10,
+  "h1": 73.764,
+  "rowH": 69,
+  "cellClip": false,
+  "small": 0
+ },
+ {
+  "w": 1440,
+  "ca": "absent",
+  "sw": 1440,
+  "iw": 1440,
+  "targets": 26,
+  "hdrH": 92,
+  "caFont": 24,
+  "caFits": true,
+  "caTop": 12,
+  "soc": [
+   {
+    "x": 1316,
+    "y": 24,
+    "w": 44,
+    "h": 44,
+    "vis": true
+   },
+   {
+    "x": 1364,
+    "y": 24,
+    "w": 44,
+    "h": 44,
+    "vis": true
+   }
+  ],
+  "rows": 9,
+  "h1": 77.76,
+  "rowH": 69,
+  "cellClip": false,
+  "small": 0
+ },
+ {
+  "w": 1440,
+  "ca": "stated",
+  "sw": 1440,
+  "iw": 1440,
+  "targets": 31,
+  "hdrH": 92,
+  "caFont": 26,
+  "caFits": true,
+  "caTop": 12,
+  "soc": [
+   {
+    "x": 1316,
+    "y": 23,
+    "w": 44,
+    "h": 44,
+    "vis": true
+   },
+   {
+    "x": 1364,
+    "y": 23,
+    "w": 44,
+    "h": 44,
+    "vis": true
+   }
+  ],
+  "rows": 10,
+  "h1": 77.76,
+  "rowH": 69,
+  "cellClip": false,
+  "small": 0
+ }
+]

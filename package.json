@@ -1,0 +1,17 @@
+{
+  "name": "excess",
+  "version": "1.0.0",
+  "description": "EXCESS site",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "gates": "node gates/run.mjs"
+  },
+  "license": "MIT",
+  "type": "module",
+  "devDependencies": {
+    "potrace": "^2.1.8",
+    "puppeteer-core": "^25.16.0",
+    "sharp": "^0.35.5"
+  },
+  "private": true
+}

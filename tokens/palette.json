@@ -1,0 +1,533 @@
+{
+ "method": "k-means (sklearn, seed 7), centroid snapped to the nearest real pixel coordinate",
+ "tokens": [
+  {
+   "name": "ground",
+   "hex": "#05291b",
+   "file": "brand/LOGO EXCESS PNG.png",
+   "x": 0,
+   "y": 0,
+   "centroid": [
+    5.0,
+    41.0,
+    27.0
+   ],
+   "share": 0.899,
+   "role": "page ground, dominant logo field"
+  },
+  {
+   "name": "ground-deep",
+   "hex": "#011f13",
+   "file": "reference/EXCESS 1.jpg.jpeg",
+   "x": 0,
+   "y": 0,
+   "centroid": [
+    1.3,
+    30.9,
+    18.8
+   ],
+   "share": 0.8814,
+   "role": "deepest field, slide ground"
+  },
+  {
+   "name": "surface",
+   "hex": "#06261b",
+   "file": "reference/SAMPUL EXCESS JPG.jpg.jpeg",
+   "x": 1396,
+   "y": 0,
+   "centroid": [
+    5.6,
+    38.7,
+    26.3
+   ],
+   "share": 0.3099,
+   "role": "raised surface, cover field"
+  },
+  {
+   "name": "cream",
+   "hex": "#f9efdc",
+   "file": "brand/LOGO EXCESS PNG...png",
+   "x": 994,
+   "y": 505,
+   "centroid": [
+    249.0,
+    239.1,
+    220.2
+   ],
+   "share": 0.7525,
+   "role": "mark fill, logo ink"
+  },
+  {
+   "name": "mint",
+   "hex": "#79e0b5",
+   "file": "reference/EXCESS 3.jpg.jpeg",
+   "x": 101,
+   "y": 859,
+   "centroid": [
+    119.4,
+    225.7,
+    179.1
+   ],
+   "share": 0.0015,
+   "role": "accent, pill outline on slide"
+  },
+  {
+   "name": "sage",
+   "hex": "#bbc1b3",
+   "file": "reference/EXCESS 1.jpg.jpeg",
+   "x": 883,
+   "y": 439,
+   "centroid": [
+    186.7,
+    192.8,
+    178.7
+   ],
+   "share": 0.0059,
+   "role": "secondary text"
+  },
+  {
+   "name": "contour",
+   "hex": "#244236",
+   "file": "reference/SAMPUL EXCESS JPG.jpg.jpeg",
+   "x": 1478,
+   "y": 2,
+   "centroid": [
+    36.8,
+    67.0,
+    53.5
+   ],
+   "share": 0.0087,
+   "role": "dashed contour line"
+  }
+ ],
+ "clusters": {
+  "logo_png": [
+   {
+    "centroid": [
+     5.0,
+     41.0,
+     27.0
+    ],
+    "share": 0.899,
+    "hex": "#05291b",
+    "x": 0,
+    "y": 0
+   },
+   {
+    "centroid": [
+     247.8,
+     238.1,
+     219.2
+    ],
+    "share": 0.0978,
+    "hex": "#f8eedb",
+    "x": 1011,
+    "y": 507
+   },
+   {
+    "centroid": [
+     143.1,
+     155.6,
+     142.9
+    ],
+    "share": 0.0008,
+    "hex": "#8f9c8f",
+    "x": 796,
+    "y": 605
+   },
+   {
+    "centroid": [
+     83.2,
+     106.0,
+     93.3
+    ],
+    "share": 0.0008,
+    "hex": "#536a5d",
+    "x": 811,
+    "y": 911
+   },
+   {
+    "centroid": [
+     198.2,
+     202.0,
+     188.6
+    ],
+    "share": 0.001,
+    "hex": "#c6cabd",
+    "x": 1322,
+    "y": 1226
+   },
+   {
+    "centroid": [
+     39.9,
+     70.2,
+     57.1
+    ],
+    "share": 0.0006,
+    "hex": "#284639",
+    "x": 1031,
+    "y": 506
+   }
+  ],
+  "logo_alpha": [
+   {
+    "centroid": [
+     249.0,
+     239.1,
+     220.2
+    ],
+    "share": 0.7525,
+    "hex": "#f9efdc",
+    "x": 994,
+    "y": 505
+   },
+   {
+    "centroid": [
+     251.9,
+     247.0,
+     232.3
+    ],
+    "share": 0.0123,
+    "hex": "#fcf7e8",
+    "x": 977,
+    "y": 505
+   },
+   {
+    "centroid": [
+     248.1,
+     238.1,
+     219.2
+    ],
+    "share": 0.2224,
+    "hex": "#f8eedb",
+    "x": 991,
+    "y": 505
+   },
+   {
+    "centroid": [
+     250.0,
+     242.9,
+     226.4
+    ],
+    "share": 0.0128,
+    "hex": "#faf3e2",
+    "x": 989,
+    "y": 503
+   }
+  ],
+  "slide3": [
+   {
+    "centroid": [
+     1.1,
+     31.1,
+     19.0
+    ],
+    "share": 0.8389,
+    "hex": "#011f13",
+    "x": 0,
+    "y": 0
+   },
+   {
+    "centroid": [
+     246.4,
+     236.6,
+     221.2
+    ],
+    "share": 0.0491,
+    "hex": "#f6edde",
+    "x": 222,
+    "y": 43
+   },
+   {
+    "centroid": [
+     128.4,
+     141.7,
+     127.0
+    ],
+    "share": 0.0049,
+    "hex": "#808e7f",
+    "x": 134,
+    "y": 44
+   },
+   {
+    "centroid": [
+     55.9,
+     72.6,
+     58.1
+    ],
+    "share": 0.0041,
+    "hex": "#38483b",
+    "x": 1321,
+    "y": 321
+   },
+   {
+    "centroid": [
+     119.4,
+     225.7,
+     179.1
+    ],
+    "share": 0.0015,
+    "hex": "#79e0b5",
+    "x": 101,
+    "y": 859
+   },
+   {
+    "centroid": [
+     173.6,
+     180.3,
+     165.9
+    ],
+    "share": 0.0044,
+    "hex": "#aeb4a6",
+    "x": 268,
+    "y": 368
+   },
+   {
+    "centroid": [
+     91.5,
+     103.3,
+     89.0
+    ],
+    "share": 0.0037,
+    "hex": "#5c6759",
+    "x": 222,
+    "y": 67
+   },
+   {
+    "centroid": [
+     210.6,
+     216.5,
+     202.8
+    ],
+    "share": 0.0046,
+    "hex": "#d3d9cb",
+    "x": 174,
+    "y": 441
+   },
+   {
+    "centroid": [
+     244.4,
+     231.0,
+     207.3
+    ],
+    "share": 0.0259,
+    "hex": "#f5e6cf",
+    "x": 1447,
+    "y": 371
+   },
+   {
+    "centroid": [
+     236.7,
+     240.9,
+     228.4
+    ],
+    "share": 0.0198,
+    "hex": "#edf0e5",
+    "x": 153,
+    "y": 43
+   },
+   {
+    "centroid": [
+     5.1,
+     24.4,
+     11.2
+    ],
+    "share": 0.0282,
+    "hex": "#06180c",
+    "x": 85,
+    "y": 37
+   },
+   {
+    "centroid": [
+     15.9,
+     38.6,
+     25.3
+    ],
+    "share": 0.0149,
+    "hex": "#102619",
+    "x": 233,
+    "y": 67
+   }
+  ],
+  "slide1": [
+   {
+    "centroid": [
+     22.6,
+     44.5,
+     30.4
+    ],
+    "share": 0.0093,
+    "hex": "#162c1f",
+    "x": 129,
+    "y": 68
+   },
+   {
+    "centroid": [
+     241.9,
+     230.4,
+     207.8
+    ],
+    "share": 0.0299,
+    "hex": "#f2e6d0",
+    "x": 1403,
+    "y": 346
+   },
+   {
+    "centroid": [
+     130.6,
+     143.1,
+     128.0
+    ],
+    "share": 0.0049,
+    "hex": "#838f81",
+    "x": 643,
+    "y": 354
+   },
+   {
+    "centroid": [
+     1.3,
+     30.9,
+     18.8
+    ],
+    "share": 0.8814,
+    "hex": "#011f13",
+    "x": 0,
+    "y": 0
+   },
+   {
+    "centroid": [
+     186.7,
+     192.8,
+     178.7
+    ],
+    "share": 0.0059,
+    "hex": "#bbc1b3",
+    "x": 883,
+    "y": 439
+   },
+   {
+    "centroid": [
+     77.5,
+     90.0,
+     76.4
+    ],
+    "share": 0.0051,
+    "hex": "#4e5a4c",
+    "x": 1502,
+    "y": 478
+   },
+   {
+    "centroid": [
+     120.0,
+     223.9,
+     178.5
+    ],
+    "share": 0.0016,
+    "hex": "#77deb3",
+    "x": 121,
+    "y": 873
+   },
+   {
+    "centroid": [
+     243.9,
+     238.0,
+     223.4
+    ],
+    "share": 0.062,
+    "hex": "#f4eee0",
+    "x": 87,
+    "y": 40
+   }
+  ],
+  "cover": [
+   {
+    "centroid": [
+     5.6,
+     38.7,
+     26.3
+    ],
+    "share": 0.3099,
+    "hex": "#06261b",
+    "x": 1396,
+    "y": 0
+   },
+   {
+    "centroid": [
+     201.9,
+     207.8,
+     190.2
+    ],
+    "share": 0.0015,
+    "hex": "#c9d0be",
+    "x": 449,
+    "y": 220
+   },
+   {
+    "centroid": [
+     11.4,
+     47.8,
+     33.7
+    ],
+    "share": 0.2252,
+    "hex": "#0c3022",
+    "x": 279,
+    "y": 0
+   },
+   {
+    "centroid": [
+     93.1,
+     109.7,
+     93.2
+    ],
+    "share": 0.0017,
+    "hex": "#5d6e5e",
+    "x": 450,
+    "y": 163
+   },
+   {
+    "centroid": [
+     247.5,
+     236.3,
+     216.5
+    ],
+    "share": 0.0393,
+    "hex": "#f7ecd8",
+    "x": 504,
+    "y": 140
+   },
+   {
+    "centroid": [
+     36.8,
+     67.0,
+     53.5
+    ],
+    "share": 0.0087,
+    "hex": "#244236",
+    "x": 1478,
+    "y": 2
+   },
+   {
+    "centroid": [
+     138.9,
+     151.4,
+     135.0
+    ],
+    "share": 0.001,
+    "hex": "#8b9887",
+    "x": 464,
+    "y": 212
+   },
+   {
+    "centroid": [
+     8.5,
+     43.3,
+     29.9
+    ],
+    "share": 0.4126,
+    "hex": "#082c1e",
+    "x": 8,
+    "y": 0
+   }
+  ]
+ }
+}

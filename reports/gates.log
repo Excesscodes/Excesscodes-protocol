@@ -1,0 +1,230 @@
+
+> excess@1.0.0 gates
+> node gates/run.mjs
+
+building
+build ok: dist/ with 20 files
+
+== static: structure and hygiene
+PASS  S01  dist/ holds index, favicon, tokens, logos
+PASS  S02  repo files live in root, not in dist
+PASS  S03  LICENSE is MIT, copyright EXCESS, 2026
+PASS  S04  no AI attribution anywhere in the repo text
+PASS  S05  no assistant config file and no assistant config folder
+
+== static: palette and colour literals
+PASS  S06  colour literals only in tokens.css (favicon asset excepted)
+PASS  S07  tokens.css carries provenance for every token
+PASS  S08  every token equals the real pixel at its recorded coordinate
+PASS  S09  favicon colours are palette tokens
+
+== static: assets
+PASS  S10  logo source is colour type 6 with pure-black transparent regions (premultiplied path required)
+PASS  S11  resized logo has no dark fringe on partial alpha
+PASS  S12  favicon is SVG 32x32 with no XML comment and no double hyphen
+PASS  S13  favicon is traced vector with holes, not an embedded raster
+
+== static: register rules
+PASS  S14  inert records carry no value and no url
+PASS  S15  every record has a legal state
+PASS  S16  inline register holds no dates and no recorded field
+PASS  S17  inline register inert records also stripped of everything but label, kind, state
+PASS  S18  dates stay in register.json as data
+PASS  S19  chain record states Solana, publicnode rpc, client statement, batch-level
+
+== static: dates, units, cadence
+PASS  S20  no date, timestamp or clock string in shipped files
+PASS  S21  no ch units in css
+PASS  S22  poll interval is 60 s and backoff is exponential
+PASS  S23  reduced-motion block present and kills animation and transition
+PASS  S24  own row keyframes named ownPulse, 2s ease-in-out infinite, mint left border
+PASS  S25  own row never reads the dexscreener cdn logo
+PASS  S26  address scanner: dist has no address-shaped string outside the stated registry
+PASS  S27  address scanner passes a 0x address when the registry states it
+PASS  S28  address scanner rejects the same 0x address when not stated
+PASS  S29  address scanner exempts the contract address itself
+PASS  S30  address scanner flags a stray base58 address
+
+== copy: zero shared 2-grams with the reference
+
+== browser: harness
+
+== browser: branch A, register as built
+PASS  B01[asBuilt]  CA slot sits at the top of the page, large font, sticky header
+PASS  B02[asBuilt]  CA absent: slot is inert, label plus pending, no address, no button
+PASS  B03[asBuilt]  CA absent: nothing to copy and no clipboard write attempted
+PASS  B04[asBuilt]  both social icons render, icon only
+PASS  B05a[asBuilt]  x absent: icon inert, no href at all
+PASS  B05b[asBuilt]  github absent: icon inert, no href at all
+PASS  B06[asBuilt]  icons sit top-right
+PASS  B07[asBuilt]  ten rows on the board: own first plus nine trending
+PASS  B08[asBuilt]  CA absent: row 1 is the brand placeholder, not clickable
+PASS  B09[asBuilt]  placeholder data: dots and $0.00
+PASS  B10[asBuilt]  placeholder uses the real brand logo file, not a tile
+PASS  B11[asBuilt]  placeholder has no copy button and no link
+PASS  B12[asBuilt]  placeholder row has no data attribute address
+PASS  B14[asBuilt]  placeholder keeps the pulse and the mint left border
+PASS  B15[asBuilt]  CA absent: no own-token request was made
+PASS  B18[asBuilt]  trending rows are Solana only, de-duplicated, ranked by 24h volume
+PASS  B19[asBuilt]  each trending row carries a copy button labelled with its symbol
+PASS  B20[asBuilt]  letter tiles appear for missing or broken images, at least two, two characters each
+PASS  B21[asBuilt]  rows with a good image show the image
+PASS  B22[asBuilt]  healthy feed shows no error line
+PASS  B23[asBuilt]  status pill reads live with a pulsing dot
+PASS  B24[asBuilt]  ticker runs on the same live data and moves
+PASS  B25[asBuilt]  count-up finished into formatted values
+PASS  B26[asBuilt]  no date, timestamp or clock string in text, aria-labels, titles or meta
+PASS  B27[asBuilt]  rendered text shows no address except the contract address
+PASS  B28[asBuilt]  no unexpected hosts contacted
+PASS  B29[asBuilt]  no page errors
+
+== browser: branch B, ca x github toggled from whatever they are
+PASS  B01[toggled]  CA slot sits at the top of the page, large font, sticky header
+PASS  B02[toggled]  CA stated: the full address is on screen as one string
+PASS  B03[toggled]  CA click copies the address and shows Clipped
+PASS  B04[toggled]  both social icons render, icon only
+PASS  B05a[toggled]  x stated: link equals the stored url, label carries the derived handle
+PASS  B05b[toggled]  github stated: link equals the stored url, label carries the derived handle
+PASS  B06[toggled]  icons sit top-right
+PASS  B07[toggled]  ten rows on the board: own first plus nine trending
+PASS  B08[toggled]  CA stated: row 1 is the live own row pinned first
+PASS  B09[toggled]  own row data: price, change, volume from the best-volume pair
+PASS  B10[toggled]  own row logo comes from pump.fun image_uri when present
+PASS  B11[toggled]  own row never uses a dexscreener cdn logo
+PASS  B12[toggled]  own row liquidity falls back to market cap with a Mkt Cap title
+PASS  B13[toggled]  own row has copy button for the CA
+PASS  B14[toggled]  own row: 2px mint left border and pulse animation
+PASS  B15[toggled]  console carries both own-token diagnostics
+PASS  B16[toggled]  dedup: own address is removed from trending rows 2 to 10
+PASS  B17[toggled]  own fetch used both endpoints in parallel
+PASS  B18[toggled]  trending rows are Solana only, de-duplicated, ranked by 24h volume
+PASS  B19[toggled]  each trending row carries a copy button labelled with its symbol
+PASS  B20[toggled]  letter tiles appear for missing or broken images, at least two, two characters each
+PASS  B21[toggled]  rows with a good image show the image
+PASS  B22[toggled]  healthy feed shows no error line
+PASS  B23[toggled]  status pill reads live with a pulsing dot
+PASS  B24[toggled]  ticker runs on the same live data and moves
+PASS  B25[toggled]  count-up finished into formatted values
+PASS  B26[toggled]  no date, timestamp or clock string in text, aria-labels, titles or meta
+PASS  B27[toggled]  rendered text shows no address except the contract address
+PASS  B28[toggled]  no unexpected hosts contacted
+PASS  B29[toggled]  no page errors
+PASS  B30  branches differ: the two runs exercised opposite CA states
+PASS  B31  market requests are identical in both CA states
+PASS  B32  market follows its register record only: both trending lists agree once the own token is set aside
+
+== browser: branch C, toggled with liquidity present and pump.fun failing
+PASS  B01[toggled-alt]  CA slot sits at the top of the page, large font, sticky header
+PASS  B02[toggled-alt]  CA stated: the full address is on screen as one string
+PASS  B03[toggled-alt]  CA click copies the address and shows Clipped
+PASS  B04[toggled-alt]  both social icons render, icon only
+PASS  B05a[toggled-alt]  x stated: link equals the stored url, label carries the derived handle
+PASS  B05b[toggled-alt]  github stated: link equals the stored url, label carries the derived handle
+PASS  B06[toggled-alt]  icons sit top-right
+PASS  B07[toggled-alt]  ten rows on the board: own first plus nine trending
+PASS  B08[toggled-alt]  CA stated: row 1 is the live own row pinned first
+PASS  B09[toggled-alt]  own row data: price, change, volume from the best-volume pair
+PASS  B10[toggled-alt]  own row logo comes from pump.fun image_uri when present
+PASS  B11[toggled-alt]  own row never uses a dexscreener cdn logo
+PASS  B12[toggled-alt]  own row liquidity uses pair.liquidity.usd when above zero
+PASS  B13[toggled-alt]  own row has copy button for the CA
+PASS  B14[toggled-alt]  own row: 2px mint left border and pulse animation
+PASS  B15[toggled-alt]  console carries both own-token diagnostics
+PASS  B16[toggled-alt]  dedup: own address is removed from trending rows 2 to 10
+PASS  B17[toggled-alt]  own fetch used both endpoints in parallel
+PASS  B18[toggled-alt]  trending rows are Solana only, de-duplicated, ranked by 24h volume
+PASS  B19[toggled-alt]  each trending row carries a copy button labelled with its symbol
+PASS  B20[toggled-alt]  letter tiles appear for missing or broken images, at least two, two characters each
+PASS  B21[toggled-alt]  rows with a good image show the image
+PASS  B22[toggled-alt]  healthy feed shows no error line
+PASS  B23[toggled-alt]  status pill reads live with a pulsing dot
+PASS  B24[toggled-alt]  ticker runs on the same live data and moves
+PASS  B25[toggled-alt]  count-up finished into formatted values
+PASS  B26[toggled-alt]  no date, timestamp or clock string in text, aria-labels, titles or meta
+PASS  B27[toggled-alt]  rendered text shows no address except the contract address
+PASS  B28[toggled-alt]  no unexpected hosts contacted
+PASS  B29[toggled-alt]  no page errors
+
+== browser: failure handling
+PASS  F01  source failure: dash rows, error line, down pill, no skeleton left
+PASS  F02  backoff retry recovers on its own without a reload
+PASS  F03  no request fires while the tab is hidden
+PASS  F04  becoming visible fetches immediately
+PASS  F05  refresh failure keeps the last good rows, flags retry
+PASS  F06  nine skeleton rows show while loading and shimmer
+PASS  F07  skeleton gives way to real rows with a 70ms stagger fade
+PASS  F08  toggling only the market-source record flips the market, nothing else
+PASS  F09  market toggle leaves row 1 following the CA state alone
+
+== browser: reduced motion
+PASS  R01  reduced motion: every animation name resolves to none
+PASS  R02  reduced motion: every transition duration is zero
+PASS  R03  reduced motion: reveal targets are fully visible at once
+PASS  R04  reduced motion: parallax never engages
+
+== browser: interaction
+PASS  I01  tabs: arrow key moves selection and swaps the panel
+PASS  I02  fact sheet: every unstated record reads label plus pending, nothing more
+PASS  I03  scroll progress bar reaches full width at the page end
+PASS  I04  pointer parallax moves the hero layers
+PASS  I05  spotlight follows the pointer on rows
+PASS  I06  row copy button copies that row address and confirms
+
+== browser: five breakpoints, measured
+PASS  M360Aa  360px: no horizontal overflow
+PASS  M360Ab  360px: every tap target is at least 44x44 (26 measured)
+PASS  M360Ac  360px: both social icons visible, top-right, 44x44
+PASS  M360Ad  360px: CA slot at the top and its text fits the slot
+PASS  M360Ae  360px: nine trending rows rendered, no clipped number cells
+PASS  M360Ta  360px: no horizontal overflow
+PASS  M360Tb  360px: every tap target is at least 44x44 (31 measured)
+PASS  M360Tc  360px: both social icons visible, top-right, 44x44
+PASS  M360Td  360px: CA slot at the top and its text fits the slot
+PASS  M360Te  360px: nine trending rows rendered, no clipped number cells
+PASS  M390Aa  390px: no horizontal overflow
+PASS  M390Ab  390px: every tap target is at least 44x44 (26 measured)
+PASS  M390Ac  390px: both social icons visible, top-right, 44x44
+PASS  M390Ad  390px: CA slot at the top and its text fits the slot
+PASS  M390Ae  390px: nine trending rows rendered, no clipped number cells
+PASS  M390Ta  390px: no horizontal overflow
+PASS  M390Tb  390px: every tap target is at least 44x44 (31 measured)
+PASS  M390Tc  390px: both social icons visible, top-right, 44x44
+PASS  M390Td  390px: CA slot at the top and its text fits the slot
+PASS  M390Te  390px: nine trending rows rendered, no clipped number cells
+PASS  M430Aa  430px: no horizontal overflow
+PASS  M430Ab  430px: every tap target is at least 44x44 (26 measured)
+PASS  M430Ac  430px: both social icons visible, top-right, 44x44
+PASS  M430Ad  430px: CA slot at the top and its text fits the slot
+PASS  M430Ae  430px: nine trending rows rendered, no clipped number cells
+PASS  M430Ta  430px: no horizontal overflow
+PASS  M430Tb  430px: every tap target is at least 44x44 (31 measured)
+PASS  M430Tc  430px: both social icons visible, top-right, 44x44
+PASS  M430Td  430px: CA slot at the top and its text fits the slot
+PASS  M430Te  430px: nine trending rows rendered, no clipped number cells
+PASS  M1366Aa  1366px: no horizontal overflow
+PASS  M1366Ab  1366px: every tap target is at least 44x44 (26 measured)
+PASS  M1366Ac  1366px: both social icons visible, top-right, 44x44
+PASS  M1366Ad  1366px: CA slot at the top and its text fits the slot
+PASS  M1366Ae  1366px: nine trending rows rendered, no clipped number cells
+PASS  M1366Ta  1366px: no horizontal overflow
+PASS  M1366Tb  1366px: every tap target is at least 44x44 (31 measured)
+PASS  M1366Tc  1366px: both social icons visible, top-right, 44x44
+PASS  M1366Td  1366px: CA slot at the top and its text fits the slot
+PASS  M1366Te  1366px: nine trending rows rendered, no clipped number cells
+PASS  M1440Aa  1440px: no horizontal overflow
+PASS  M1440Ab  1440px: every tap target is at least 44x44 (26 measured)
+PASS  M1440Ac  1440px: both social icons visible, top-right, 44x44
+PASS  M1440Ad  1440px: CA slot at the top and its text fits the slot
+PASS  M1440Ae  1440px: nine trending rows rendered, no clipped number cells
+PASS  M1440Ta  1440px: no horizontal overflow
+PASS  M1440Tb  1440px: every tap target is at least 44x44 (31 measured)
+PASS  M1440Tc  1440px: both social icons visible, top-right, 44x44
+PASS  M1440Td  1440px: CA slot at the top and its text fits the slot
+PASS  M1440Te  1440px: nine trending rows rendered, no clipped number cells
+
+== copy: results
+PASS  C01  no shared 2-gram that contains a content word
+        (function-word-only 2-grams shared, informational: more than | of the | and the | at the)
+PASS  C02  no content word shared with the reference vocabulary (chain name excepted)
+
+191 gates, 191 passed, 0 failed

@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EXCESS</title>
+<meta name="description" content="A Solana-native coin with a live board of the busiest debuts, built into the page from the opening load.">
+<meta property="og:title" content="EXCESS">
+<meta property="og:description" content="A Solana-native coin with a live board of the busiest debuts, built into the page from the opening load.">
+<meta name="color-scheme" content="dark">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="preload" href="/assets/fonts/ChakraPetch-700.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/Inter-400-600.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/css/tokens.css">
+<link rel="stylesheet" href="/css/app.css">
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+<a class="skip" href="#main">Jump to main</a>
+<div class="progress" aria-hidden="true"><i></i></div>
+
+<header class="top" id="top">
+  <a class="brand" href="#main" aria-label="EXCESS, back to top">
+    <img src="/assets/logo-192.png" width="32" height="32" alt="">
+    <span class="brand-word">EXCESS</span>
+  </a>
+
+  <section class="ca" id="ca-slot" aria-label="Chain address" data-state="absent">
+    <span class="ca-label">Chain address</span>
+    <span class="ca-body"><span class="ca-pending">pending</span></span>
+  </section>
+
+  <nav class="social" aria-label="Social links" id="social"></nav>
+</header>
+
+<main id="main">
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="mesh" aria-hidden="true" data-depth="0.02"><i></i><i></i><i></i></div>
+    <svg class="contours" aria-hidden="true" data-depth="0.04" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice" focusable="false">
+      <path d="M-20 210C120 150 240 130 340 170S520 250 640 210 860 70 1020 90 1300 190 1640 120"/>
+      <path d="M-20 300C140 250 270 240 380 280S560 350 690 310 900 190 1060 210 1330 300 1640 240"/>
+      <path d="M-20 390C160 350 300 350 420 390S600 450 740 410 940 310 1100 330 1360 410 1640 360"/>
+      <path d="M-20 560C200 520 380 560 520 600S760 620 900 560 1180 470 1640 520"/>
+      <path d="M-20 700C240 660 460 720 640 760S960 740 1120 680 1420 620 1640 660"/>
+    </svg>
+    <img class="hero-hex" data-depth="0.09" src="/assets/excess-logo.png" width="512" height="512" alt="" aria-hidden="true">
+
+    <div class="hero-in">
+      <p class="pill" data-state="idle" id="hero-pill" data-reveal><span class="dot" aria-hidden="true"></span><span class="pill-text">Connecting</span></p>
+      <h1 id="hero-title" data-reveal>More than enough.<br>Made on purpose.</h1>
+      <p class="lede" data-reveal>EXCESS is native to Solana. The page carries a running board of the busiest debuts, and the project’s line takes a reserved spot at the top the moment an address exists.</p>
+
+      <dl class="figures" data-reveal-group>
+        <div class="fig" data-spot data-reveal><dt>Network</dt><dd id="fig-chain">—</dd></div>
+        <div class="fig" data-spot data-reveal><dt>Address</dt><dd id="fig-ca">pending</dd></div>
+        <div class="fig" data-spot data-reveal><dt>Feed</dt><dd id="fig-feed">—</dd></div>
+        <div class="fig" data-spot data-reveal><dt>Rows on board</dt><dd id="fig-rows">—</dd></div>
+      </dl>
+      <a class="stamp" href="#board" data-reveal>Open the board</a>
+    </div>
+  </section>
+
+  <section class="ticker" id="ticker" aria-label="Moving tape of the same live data" data-reveal>
+    <div class="ticker-track" id="ticker-track" aria-hidden="true"></div>
+  </section>
+
+  <section class="panel" id="board" aria-labelledby="board-title">
+    <header class="panel-head" data-reveal>
+      <div>
+        <p class="eyebrow">01</p>
+        <h2 id="board-title">Live board</h2>
+        <p class="sub">The project’s line leads. Beneath it, the nine busiest boosted Solana names, ranked by volume over the past 24 hours.</p>
+      </div>
+      <p class="pill" data-state="idle" id="board-pill"><span class="dot" aria-hidden="true"></span><span class="pill-text">Connecting</span></p>
+    </header>
+
+    <div class="board" id="board-grid" role="table" aria-label="Solana coins ranked by 24h volume">
+      <div class="brow brow-head" role="row">
+        <span role="columnheader">#</span>
+        <span role="columnheader">Name</span>
+        <span role="columnheader" class="num">Spot</span>
+        <span role="columnheader" class="num">24h</span>
+        <span role="columnheader" class="num">Volume</span>
+        <span role="columnheader" class="num">Liquidity</span>
+        <span role="columnheader"><span class="sr-only">Clip address</span></span>
+      </div>
+      <div class="board-body" id="board-body" role="rowgroup"></div>
+    </div>
+    <p class="board-note" id="board-note" role="status" aria-live="polite"></p>
+  </section>
+
+  <section class="panel" id="facts" aria-labelledby="facts-title">
+    <header class="panel-head" data-reveal>
+      <div>
+        <p class="eyebrow">02</p>
+        <h2 id="facts-title">Fact sheet</h2>
+        <p class="sub">All outside facts get a single entry. Anything unconfirmed is greyed out and has no link.</p>
+      </div>
+    </header>
+
+    <div class="tabs" data-reveal>
+      <div class="tablist" role="tablist" aria-label="Fact groups">
+        <button role="tab" id="tab-token" aria-controls="pane-token" aria-selected="true" type="button">Asset</button>
+        <button role="tab" id="tab-network" aria-controls="pane-network" aria-selected="false" tabindex="-1" type="button">Network</button>
+        <button role="tab" id="tab-feed" aria-controls="pane-feed" aria-selected="false" tabindex="-1" type="button">Feeds</button>
+      </div>
+      <div class="pane" role="tabpanel" id="pane-token" aria-labelledby="tab-token" data-spot></div>
+      <div class="pane" role="tabpanel" id="pane-network" aria-labelledby="tab-network" hidden data-spot></div>
+      <div class="pane" role="tabpanel" id="pane-feed" aria-labelledby="tab-feed" hidden data-spot></div>
+    </div>
+  </section>
+
+  <section class="panel" id="path" aria-labelledby="path-title">
+    <header class="panel-head" data-reveal>
+      <div>
+        <p class="eyebrow">03</p>
+        <h2 id="path-title">Road ahead</h2>
+        <p class="sub">Four stretches, taken in order.</p>
+      </div>
+    </header>
+    <ol class="steps" data-reveal-group>
+      <li class="step" data-spot data-reveal><span class="step-n">01</span><h3>Signal</h3><p>A board that runs from the opening load and never waits for anything else to be ready.</p></li>
+      <li class="step" data-spot data-reveal><span class="step-n">02</span><h3>Go live</h3><p>The address is out, and the top row of the board switches on.</p></li>
+      <li class="step" data-spot data-reveal><span class="step-n">03</span><h3>Reach</h3><p>All official channels open, listed here only after confirmation.</p></li>
+      <li class="step" data-spot data-reveal><span class="step-n">04</span><h3>Compound</h3><p>Tools and partners that give holders something to do beyond watching.</p></li>
+    </ol>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="foot-in">
+    <span class="foot-brand"><img src="/assets/logo-192.png" width="24" height="24" alt=""> EXCESS</span>
+    <span class="foot-mid">excess.codes</span>
+    <span class="foot-end">Solana-native</span>
+  </div>
+</footer>
+
+<script type="application/json" id="register-data">/*REGISTER*/</script>
+<script type="module" src="/js/main.js"></script>
+</body>
+</html>

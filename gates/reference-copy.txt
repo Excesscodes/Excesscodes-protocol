@@ -1,0 +1,137 @@
+Surplus · US100
+America's largest companies in one token on Solana, with every stock inside placed wherever it earns more than holding it.
+Surplus
+https://surplus.codes/opengraph-image?b5689bff255374c7
+image/png
+1200
+630
+Surplus: America's largest companies in one token on Solana, with every stock inside placed wherever it earns more than holding it.
+website
+summary_large_image
+Sound on. Change to Music off.
+Places
+The fund
+The next strike
+Skip to content
+Surplus: America’s largest companies in one token on Solana
+Connect
+Sound on
+Fund
+Twins
+Buy
+Redeem
+Account
+Strikes
+Docs
+Token
+US100
+—
+Companies
+Where the units sit
+Hold —
+Twin —
+Lend —
+Surplus earned
+Next strike
+16:00 ET
+Once per US trading day at the 16:00 ET close
+Buy US100
+Buy US100 · Surplus
+Buy US100 with USDC at the next strike, once per US trading day at the 16:00 ET close.
+Surplus, the plate
+Where you are
+Up one level
+/
+Up
+Orders fill at the next strike: once per US trading day at the 16:00 ET close. The slice your USDC buys is minted at its exact fraction of the fund.
+USDC to pay
+USDC
+Connect a wallet to see its USDC
+≈ 0US100 at — a share, display price
+Connect a wallet
+minted = supply × min_i(slice_i ÷ units_i)
+This wallet’s orders
+Connect a wallet to see its orders.
+The certificate
+The press log
+The prospectus · Surplus
+How Surplus works: the US100 basket, shares and strikes, the sleeves and the surplus rule, issuers, fees and the token, addresses, integrating.
+The prospectus
+How Surplus works: the basket, the share, the strike, the sleeves and the surplus rule, the issuers, the fees and the token, the addresses, and building on it.
+01
+The US100 basket
+Which companies US100 holds, how they are weighted, and how the basket changes.
+02
+A share is a fraction of every company
+The share invariant, the in-kind math, forward pricing and the cutoff.
+03
+The hold, the sleeves and the surplus rule
+Where a company’s units sit, and the measurement that decides how long they stay there.
+04
+Issuer tokens and share-equivalent units
+Three issuers, one unit per company.
+05
+Earnings, the fee vault and SURPLUS
+What the fund earns, what the protocol keeps, and where it goes.
+06
+Program addresses and authorities
+The program, its accounts and the keys that sign for it.
+07
+Creating, redeeming and swapping from code
+Build, review, sign, submit and follow, through the versioned contract.
+The design answers Thaddeus Pinakiewicz, “
+AMM-bivalent: How Not to Deploy Tokenized Stocks in DeFi
+” (Galaxy Research, 2026-10-06).
+The register · Surplus
+Every company in US100 and where its units sit: the hold, a twin sleeve, a lend sleeve.
+The companies
+The register
+Fund value
+Shares
+The hold
+Twin sleeves
+Lend sleeves
+#
+Company
+Weight
+Issuer tokens
+Units / share
+Where it sits
+The press log · Surplus
+How each Surplus strike ran: the cutoff, the orders in and out, the slice per company, shares minted and burned, the fill price.
+Once per US trading day at the 16:00 ET close. At each strike the keeper buys or sells the slice of every company, and shares are minted or burned at the slice’s exact ratio of the fund.
+The SURPLUS token · Surplus
+The protocol’s whole fee share buys SURPLUS through Jupiter and burns it. Supply 1,000,000,000, fair launch.
+The SURPLUS token
+SURPLUS
+The protocol’s whole fee share buys SURPLUS through Jupiter and burns it.
+Supply
+1,000,000,000
+Burned
+In the fee vault
+Where the fee comes from
+Source
+Sleeve earnings
+swap fees
+Kamino interest
+Protocol share
+Management fee
+none
+At harvest the protocol share goes to the fee vault; the rest stays in the fund for every US100 share.
+The fee vault
+a PDA no key signs for
+The token
+Launch
+Fair launch
+Developer allocation
+its own first buy, 3.5% of supply,
+locked until Nov 29, 2028
+Venue
+Raydium LaunchLab
+Mint
+VjKCt9XXKQ5zjR2xf8hNyXc6VRJHMqrGaK7p7NtPLUS
+Copy
+The whole supply of 1,000,000,000 goes to a public fair launch on equal terms.
+Buybacks and burns
+The twinning bench · Surplus
+Swap one tokenized stock for its twin through the Surplus fund’s twin sleeves.
